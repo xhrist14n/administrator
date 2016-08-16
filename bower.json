@@ -30,7 +30,8 @@
     "flot.tooltip": "^0.8.7",
     "holderjs": "^2.9.3",
     "metisMenu": "^2.5.2",
-    "morris.js": "morrisjs#^0.5.1"
+    "morris.js": "morrisjs#^0.5.1",
+    "PACE": "pace#^1.0.2"
   },
   "overrides": {
     "bootstrap": {
@@ -39,6 +40,34 @@
         "dist/css/bootstrap.css",
         "dist/js/bootstrap.js",
         "dist/fonts/*"
+      ]
+    },
+    "font-awesome":{
+      "main":[
+        "css/font-awesome.css",
+        "css/font-awesome.css.map",
+        "fonts/fontawesome-webfont.eot",
+        "fonts/fontawesome-webfont.svg",
+        "fonts/fontawesome-webfont.ttf",
+        "fonts/fontawesome-webfont.woff",
+        "fonts/fontawesome-webfont.woff2",
+        "fonts/FontAwesome.otf"
+      ]
+    },
+    "html5shiv": {
+      "main":[
+        "dist/html5shiv.js"
+      ]
+    },
+    "respond": {
+      "main":[
+        "src/respond.js"
+      ]
+    },
+    "PACE": {
+      "main": [
+        "themes/silver/pace-theme-flash.css",
+        "pace.js"
       ]
     }
   },
