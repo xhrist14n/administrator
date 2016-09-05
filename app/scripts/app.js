@@ -33,6 +33,10 @@ angular
         templateUrl: 'views/app/area/area.html',
         controller: 'AreaCtrl'
       })
+      .when('/bar', {
+        templateUrl: 'views/app/bar/bar.html',
+        controller: 'BarCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
