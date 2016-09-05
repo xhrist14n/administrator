@@ -16,24 +16,9 @@
  */
 angular.module('adminApp')
   .controller('MainCtrl', function ($scope) {
+
     activeMenu('main');
 
-    $scope.navigation = false;
+    $scope.title = 'Panel de Administracion';
 
-    $scope.navigation=function(){
-      load_navigation();
-    }
-/*
-    var interval = setInterval(
-      function () {
-        if($scope.navigation==true){
-          load_navigation();
-          clearInterval(interval);
-        }
-      },100
-    );
-    if($scope.page==true){
-      load_page();
-    }
-*/
   });
