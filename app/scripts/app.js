@@ -37,6 +37,10 @@ angular
         templateUrl: 'views/app/bar/bar.html',
         controller: 'BarCtrl'
       })
+      .when('/donus', {
+        templateUrl: 'views/app/donus/donus.html',
+        controller: 'DonusCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
