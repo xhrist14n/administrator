@@ -1,4 +1,4 @@
-/* 
+/*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -32,4 +32,18 @@ angular
       .otherwise({
         redirectTo: '/'
       });
+  })
+  .run(function($rootScope){
+    $rootScope.$on("$includeContentLoaded", function(event, templateName){
+      if($rootScope.navigation=='true'){
+        $rootScope.navigation='false';
+        navigation();
+      }
+
+      if($rootScope.page=='true'){
+        $rootScope.page='false';
+        page();
+      }
+
+    });
   });
