@@ -26,8 +26,12 @@ angular
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'views/main.html',
+        templateUrl: 'views/app/main/main.html',
         controller: 'MainCtrl'
+      })
+      .when('/area', {
+        templateUrl: 'views/app/area/area.html',
+        controller: 'AreaCtrl'
       })
       .otherwise({
         redirectTo: '/'
@@ -44,6 +48,8 @@ angular
         $rootScope.page='false';
         page();
       }
+
+
 
     });
   });

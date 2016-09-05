@@ -21,4 +21,5 @@ angular.module('adminApp')
 
     $scope.title = 'Panel de Administracion';
 
+
   });
